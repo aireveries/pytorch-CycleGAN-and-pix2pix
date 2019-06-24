@@ -14,4 +14,5 @@ environment:
 build:
   image: taesungp/pytorch-cyclegan-and-pix2pix
   build_steps:
-    - pip3 install jupyter
+    - python2 -m pip install ipython==5.7 --user
+    - python2 -m pip install ipykernel==4.10 --user
