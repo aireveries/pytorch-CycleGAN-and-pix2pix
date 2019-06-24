@@ -12,7 +12,4 @@ environment:
       limits: 1
 
 build:
-  image: taesungp/pytorch-cyclegan-and-pix2pix
-  build_steps:
-    - python2 -m pip install ipython==5.7 --user
-    - python2 -m pip install ipykernel==4.10 --user
+  image: aireverie/cyclegan
