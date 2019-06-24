@@ -13,3 +13,5 @@ environment:
 
 build:
   image: taesungp/pytorch-cyclegan-and-pix2pix
+  build_steps:
+    - pip3 install jupyter
