@@ -7,7 +7,8 @@ RUN rm Miniconda3-latest-Linux-x86_64.sh
 ENV PATH=/miniconda3/bin:${PATH}
 RUN conda update -y conda
 
-RUN conda install -y pytorch torchvision jupyter -c pytorch
+RUN conda install -c anaconda scipy==1.2
+RUN conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
 RUN mkdir /workspace/ && cd /workspace/ && git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git && cd pytorch-CycleGAN-and-pix2pix && pip install -r requirements.txt
 
 WORKDIR /workspace
