@@ -13,3 +13,5 @@ environment:
 
 build:
   image: aireverie/cyclegan
+  build_steps:
+    - pip install jupyter
